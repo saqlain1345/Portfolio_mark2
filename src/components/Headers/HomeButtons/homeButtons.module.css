@@ -19,3 +19,9 @@
     background: var(--color-primary);
     color: var(--color-bg);
 }
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
