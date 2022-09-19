@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-// import RingLoader from "react-spinners/RingLoader";
-import CircleLoader from "react-spinners/CircleLoader";
+import RingLoader from "react-spinners/RingLoader";
+// import CircleLoader from "react-spinners/CircleLoader";
 import Home from "./components/Headers/Home";
 import NavBar from "./components/NavBar";
 // import About from "./components/About";
@@ -12,14 +12,14 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-    }, 4000);
+    }, 3000);
   }, []);
 
   return (
     <>
       {!loading ? (
         <div className="loader">
-          <CircleLoader loading={true} color={"#36d7b7"} size={100}/>
+          <RingLoader loading={true} color={"#36d7b7"} size={80}/>
         </div>
       ) : (
         <>
